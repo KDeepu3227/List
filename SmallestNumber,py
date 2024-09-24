@@ -1,0 +1,21 @@
+'''
+Write a Python Program to find the smallest number in a list
+Input & Output Format:
+Input consists of one list and one integer.
+First input consists of a size of a list.
+Second inputs corresponds to the size of the list.
+Output consists of the largest element.
+'''
+def find_smallest_number():
+    size = int(input("Enter the size of the list: "))
+    elements = list(map(int, input(f"Enter {size} integers separated by spaces: ").split()))
+    if size != len(elements):
+        print("Error: The number of elements does not match the specified size.")
+        return
+    smallest_number = min(elements)
+    print("Smallest element:", smallest_number)
+find_smallest_number()
+'''
+Enter the size of the list: 6
+Enter 6 integers separated by spaces: 2 6 5 1 8 3 
+Smallest element: 1
